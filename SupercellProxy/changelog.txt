@@ -1,0 +1,18 @@
+﻿SupercellProxy Changelog
+====================================
+v1.0.1
+	-Faster, better console output
+	-Minor WebAPI improvements
+
+v1.0.0
+	-Proper exception handling with detailed help
+	-Console argument handling
+	-Support for Clash Royale & Clash of Clans 
+	-APK downloading system for the newest, modded game clients
+	-Web API giving basic proxy info (over HTTP)
+	-Cleaned tons of code
+	-Removed..
+	 -the modding feature
+	 -bugs
+
+====================================

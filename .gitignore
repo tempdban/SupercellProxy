@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SupercellProxy/bin/Debug
+/.vs/SupercellProxy/v14
+/SupercellProxy/obj/Debug

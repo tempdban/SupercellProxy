@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <meta description="SupercellProxy WebAPI" />
+    <meta lang="en-us" />
+    <meta spellcheck="false" />
+    <title>SupercellProxy WebAPI</title>
+
+    <script>
+        console.log("Setting favicon..");
+        (function () {
+            var link = document.createElement('link');
+            link.type = 'image/x-icon';
+            link.rel = 'shortcut icon';
+            link.href = 'https://infinitymodding.net/img/favicons/favicon.png';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }());
+        console.log("Favicon set!");
+    </script>
+</head>
+
+<body>
+    <p style="text-align:center;"><img src="https://infinitymodding.net/img/supercell_proxy.png" /></p>
+    <p style="text-align:center;"><b>%PROXYVERSION%</b></p>
+
+    <hr />
+    <details>
+        <summary id="generalInfo">General info</summary>
+        <ul>
+            <li>Status: <font color="green">ONLINE</font></li>
+            <li>Request time: %TIME%</li>
+            <li>Logging-Level: %LOGLEVEL%</li>
+            <li>Host: <i>%HOST%</i></li>
+            <li>Total connections: %TOTALCONNECTIONS%</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary id="connectionList">Connected IP addresses</summary>
+        <p><b>%TOTALCONNECTIONLIST%</b></p>
+    </details>
+    <hr />
+
+    <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">&copy; 2016 <a href="https://infinitymodding.net">InfinityModding</a></p>
+</body>
+</html>
