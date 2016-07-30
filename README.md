@@ -12,9 +12,8 @@ traffic. Useful for people who want to develop private servers.
 Motivated by *clugh*, *Ultrapowa* & *FICTURE7*
 
 ## Contact
-https://infinitymodding.net
 
-![alt text](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/skype_circle_color-48.png "Contact me on skype") : julianzzxd
+![alt text](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/skype_circle_color-48.png "Contact me on skype") : knight.king584
 
 ## Installation
 
@@ -23,11 +22,7 @@ You can either run the proxy and follow the steps it tells you, or read the offi
 
 ## Proof of Concepts
 
-https://infinitymodding.net/projects/supercellproxy/coc.png
-
-https://infinitymodding.net/projects/supercellproxy/bb.png
-
-https://infinitymodding.net/projects/supercellproxy/cr.png
+..Soon
 
 ## Participants
 
