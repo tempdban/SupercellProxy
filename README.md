@@ -18,7 +18,7 @@ Motivated by *clugh*, *Ultrapowa* & *FICTURE7*
 ## Installation
 
 Open SupercellProxy.sln with Visual Studio and compile the application.
-You can either run the proxy and follow the steps it tells you, or read the official [documentation](https://infinitymodding.net/) first.
+If you don't know how,google it.
 
 ## Proof of Concepts
 
