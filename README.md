@@ -20,8 +20,8 @@ Motivated by *clugh*, *Ultrapowa* & *FICTURE7*
 Open SupercellProxy.sln with Visual Studio and compile the application.
 If you don't know how,google it.
 
-## Proof of Concepts
-
+## Proof of Concepts                            
+Note:The exe in the build folder doesn't have latest source sometimes
 ..Soon
 
 ## Participants
