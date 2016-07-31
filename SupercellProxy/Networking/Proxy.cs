@@ -35,8 +35,8 @@ namespace SupercellProxy
                     Directory.CreateDirectory("Packets");
 
                 // Download latest public key
-                Keys.DownloadPublicKey();
-
+                Keys.PublicKey();
+                
                 // Bind a new socket to the local EP     
                 IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 9339);
                 Socket clientListener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

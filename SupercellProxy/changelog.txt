@@ -1,5 +1,14 @@
 ﻿SupercellProxy Changelog
 ====================================
+v1.1.0
+	-Add content for packet 10101
+	-Key improvements
+	-Removed..
+	   -APKDownloader
+	-Coming soon...:
+        -New APKDownloader	
+	
+	
 v1.0.1
 	-Faster, better console output
 	-Minor WebAPI improvements

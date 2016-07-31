@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using Blake2Sharp;
+using System.IO;
 
 namespace SupercellProxy
 {
@@ -75,7 +76,37 @@ namespace SupercellProxy
                 encryptedPayload = CustomKeyPair.PublicKey.Concat(encryptedPayload).ToArray();
                 // We are doing the authentification part
                 State = Status.Authentification;
+                using (var reader = new PacketReader(new MemoryStream(decryptedPayload)))
+                {
+                    Logger.Log("Packet 10101 Content ->", LogType.PACKET);
+                    Console.WriteLine("User ID                      -> " + reader.ReadInt64());
+                    Console.WriteLine("User Token                   -> " + reader.ReadString());
+                    Console.WriteLine("Major Version                -> " + reader.ReadInt32());
+                    Console.WriteLine("Content Version              -> " + reader.ReadInt32());
+                    Console.WriteLine("Minor Version                -> " + reader.ReadInt32());
+                    Console.WriteLine("MasterHash                   -> " + reader.ReadString());
+                    Console.WriteLine("Unknown1                     -> " + reader.ReadString());
+                    Console.WriteLine("OpenUDID                     -> " + reader.ReadString());
+                    Console.WriteLine("MacAddress                   -> " + reader.ReadString());
+                    Console.WriteLine("DeviceModel                  -> " + reader.ReadString());
+                    Console.WriteLine("LocaleKey                    -> " + reader.ReadInt32());
+                    Console.WriteLine("Language                     -> " + reader.ReadString());
+                    Console.WriteLine("AdvertisingGUID              -> " + reader.ReadString());
+                    Console.WriteLine("OSVersion                    -> " + reader.ReadString());
+                    Console.WriteLine("Unknown2                     -> " + reader.ReadByte());
+                    Console.WriteLine("Unknown3                     -> " + reader.ReadString());
+                    Console.WriteLine("AndroidDeviceID              -> " + reader.ReadString());
+                    Console.WriteLine("FacebookDistributionID       -> " + reader.ReadString());
+                    Console.WriteLine("IsAdvertisingTrackingEnabled -> " + reader.ReadBoolean());
+                    Console.WriteLine("VendorGUID                   -> " + reader.ReadString());
+                    Console.WriteLine("Seed                         -> " + reader.ReadInt32());
+                    Console.WriteLine("Unknown4                     -> " + reader.ReadByte());
+                    Console.WriteLine("Unknown5                     -> " + reader.ReadString());
+                    Console.WriteLine("Unknown6                     -> " + reader.ReadString());
+                    Console.WriteLine("ClientVersion                -> " + reader.ReadString());
+                
             }
+        }
             else if (packetID == 20103 || packetID == 20104)
             {
                 if (State >= Status.Authentification)
@@ -146,6 +177,35 @@ namespace SupercellProxy
 
                 // We are doing the authentification part
                 State = Status.Authentification;
+                using (var reader = new PacketReader(new MemoryStream(decryptedPayload)))
+                {
+                    Logger.Log("Packet 10101 Content ->", LogType.PACKET);
+                    Console.WriteLine("User ID                      -> " + reader.ReadInt64());
+                    Console.WriteLine("User Token                   -> " + reader.ReadString());
+                    Console.WriteLine("Major Version                -> " + reader.ReadInt32());
+                    Console.WriteLine("Content Version              -> " + reader.ReadInt32());
+                    Console.WriteLine("Minor Version                -> " + reader.ReadInt32());
+                    Console.WriteLine("MasterHash                   -> " + reader.ReadString());
+                    Console.WriteLine("Unknown1                     -> " + reader.ReadString());
+                    Console.WriteLine("OpenUDID                     -> " + reader.ReadString());
+                    Console.WriteLine("MacAddress                   -> " + reader.ReadString());
+                    Console.WriteLine("DeviceModel                  -> " + reader.ReadString());
+                    Console.WriteLine("LocaleKey                    -> " + reader.ReadInt32());
+                    Console.WriteLine("Language                     -> " + reader.ReadString());
+                    Console.WriteLine("AdvertisingGUID              -> " + reader.ReadString());
+                    Console.WriteLine("OSVersion                    -> " + reader.ReadString());
+                    Console.WriteLine("Unknown2                     -> " + reader.ReadByte());
+                    Console.WriteLine("Unknown3                     -> " + reader.ReadString());
+                    Console.WriteLine("AndroidDeviceID              -> " + reader.ReadString());
+                    Console.WriteLine("FacebookDistributionID       -> " + reader.ReadString());
+                    Console.WriteLine("IsAdvertisingTrackingEnabled -> " + reader.ReadBoolean());
+                    Console.WriteLine("VendorGUID                   -> " + reader.ReadString());
+                    Console.WriteLine("Seed                         -> " + reader.ReadInt32());
+                    Console.WriteLine("Unknown4                     -> " + reader.ReadByte());
+                    Console.WriteLine("Unknown5                     -> " + reader.ReadString());
+                    Console.WriteLine("Unknown6                     -> " + reader.ReadString());
+                    Console.WriteLine("ClientVersion                -> " + reader.ReadString());
+                }
             }
             else if (packetID == 20103 || packetID == 20104)
             {
