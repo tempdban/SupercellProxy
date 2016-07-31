@@ -12,22 +12,17 @@ traffic. Useful for people who want to develop private servers.
 Motivated by *clugh*, *Ultrapowa* & *FICTURE7*
 
 ## Contact
-https://infinitymodding.net
 
-![alt text](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/skype_circle_color-48.png "Contact me on skype") : julianzzxd
+![alt text](https://cdn3.iconfinder.com/data/icons/free-social-icons/67/skype_circle_color-48.png "Contact me on skype") : knight.king584
 
 ## Installation
 
 Open SupercellProxy.sln with Visual Studio and compile the application.
-You can either run the proxy and follow the steps it tells you, or read the official [documentation](https://infinitymodding.net/) first.
+If you don't know how,google it.
 
-## Proof of Concepts
-
-https://infinitymodding.net/projects/supercellproxy/coc.png
-
-https://infinitymodding.net/projects/supercellproxy/bb.png
-
-https://infinitymodding.net/projects/supercellproxy/cr.png
+## Proof of Concepts                            
+Note:The exe in the build folder doesn't have latest source sometimes
+..Soon
 
 ## Participants
 
