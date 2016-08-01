@@ -21,13 +21,14 @@ Open SupercellProxy.sln with Visual Studio and compile the application.
 If you don't know how,google it.
 
 ## Proof of Concepts                            
-Note:The exe in the build folder doesn't have latest source sometimes
-..Soon
+
+http://i.imgur.com/xrIP5SF.png
 
 ## Participants
 
 * ExPl0itR
 * BerkanYildiz
+* knightking10
 
 ## License
 
