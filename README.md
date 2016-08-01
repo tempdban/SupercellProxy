@@ -19,7 +19,10 @@ Motivated by *clugh*, *Ultrapowa* & *FICTURE7*
 
 Open SupercellProxy.sln with Visual Studio and compile the application.
 If you don't know how,google it.
-
+Then connect with the apk
+##APK
+ModdedCoC : http://www.mediafire.com/download/1p2bj259pxnd0hh/COC+8.332.2+patched.apk
+Modded CR and modded Boom Beach coming soon.
 ## Proof of Concepts                            
 
 http://i.imgur.com/xrIP5SF.png
